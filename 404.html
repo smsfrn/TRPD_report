@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Analyses for Three Rivers Park District</title>
+  <title>Page not found | Analyses for Three Rivers Park District</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Analyses for Three Rivers Park District" />
+  <meta property="og:title" content="Page not found | Analyses for Three Rivers Park District" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="/Images/Logos/trpd-byob.png" />
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ set in the _output.yml file.</p>" />
   <meta name="github-repo" content="smsfrn/Three_Rivers" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Analyses for Three Rivers Park District" />
+  <meta name="twitter:title" content="Page not found | Analyses for Three Rivers Park District" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
@@ -37,7 +37,7 @@ set in the _output.yml file.</p>" />
   
   
 
-<link rel="next" href="park-species-lists.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -215,44 +215,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Analyses for Three Rivers Park District</h1>
-<p class="author"><em>Samuel M. Safran, University of Minnesota</em></p>
-<p class="date"><em>2023-08-02</em></p>
-</div>
-<div id="about" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Chapter 1</span> About<a href="about.html#about" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This report compiles analyses conducted by Sam Safran for the Three Rivers Park District.</p>
-<div id="load-data" class="section level2 hasAnchor" number="1.1">
-<h2><span class="header-section-number">1.1</span> Load data<a href="about.html#load-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Three Rivers databases and files are ingested with two scripts:</p>
-<ul>
-<li><p><code>Scripts/1_Data_Import.R</code>: imports the bird and vegetation survey databases maintained by Three Rivers (.accdb format) into R. Each table in the databases is imported as its own data frame object.</p></li>
-<li><p><code>Scripts/2_Spatial_Data_Import.R</code>: imports Three Rivers spatial data maintained in Three Rivers geodatabases into R. Each feature class becomes an <em>sf</em> data frame object.</p></li>
-</ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="about.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
-<span id="cb1-2"><a href="about.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="fu">here</span>(<span class="st">&quot;Scripts&quot;</span>, <span class="st">&quot;1_Data_Import.R&quot;</span>))</span>
-<span id="cb1-3"><a href="about.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="fu">here</span>(<span class="st">&quot;Scripts&quot;</span>, <span class="st">&quot;2_Spatial_Data_Import.R&quot;</span>))</span></code></pre></div>
-<p><strong>Note</strong>: to update the files/databases used in these analyses update the file paths in the data import scripts.</p>
-<p>The data imported by <code>1_Data_Import.R</code> include the following files:</p>
-<div id="htmlwidget-a7b3ed0b12fe7fcbb3f6" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a7b3ed0b12fe7fcbb3f6">{"x":{"filter":"none","vertical":false,"data":[["/Data/Wildlife/BirdSurveysData_202210.accdb","/Data/Wildlife/BirdSurveysData_202210.accdb","/Data/Wildlife/BirdSurveysData_202210.accdb","/Data/Wildlife/BirdSurveysData_202210.accdb","/Data/Wildlife/BirdSurveysData_202210.accdb","/Data/Wildlife/BirdSurveysData_202210.accdb","/Data/Wildlife/BirdSurveysData_202210.accdb","/Data/Wildlife/BirdSurveysData_202210.accdb","/Data/Wildlife/BirdSurveysData_202210.accdb","/Data/Wildlife/BirdSurveysData_202210.accdb","/Data/Wildlife/BirdSurveysData_202210.accdb","/Data/Wildlife/BirdSurveysData_202210.accdb","/Data/Wildlife/BirdSurveysData_202210.accdb","/Data/Wildlife/BirdSurveysData_202210.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb","/Data/Vegetation/VegetationSurveysData.accdb"],["tblBikeTrailStops","tblBirdFamily","tblBirdGroup","tblBirds_BikeTrails","tblBirds_PointCounts","tblBirds_Transects","tblBirdSpecies","tblHabitatType","tblPersonnel","tblStatus","tblSurveyConditions","tblSurveyDefn","tblSurveyType","tblWeather","tblAreaNames","tblDataForbStudy01meter","tblDataForbStudy03meter","tblDataPrOF04Circles","tblDataPrOF20meter","tblDataWoodlot01meter","tblDataWoodlot03meter","tblDataWoodlot10meter","tblDataWoodlot20meter","tblDataWoodlotVarSize","tblGroupA","tblGroupB","tblGroupC","tblGroupD","tblGroupE","tblGroupF","tblPlantSpecies","tblRegisterSites","tblSampleSites","tblSpeciesForm","tblSurveyMethods","tblTDistribution"],["bird.tblBikeTrailStops","bird.tblBirdFamily","bird.tblBirdGroup","bird.tblBirds_BikeTrails","bird.tblBirds_PointCounts","bird.tblBirds_Transects","bird.tblBirdSpecies","bird.tblHabitatType","bird.tblPersonnel","bird.tblStatus","bird.tblSurveyConditions","bird.tblSurveyDefn","bird.tblSurveyType","bird.tblWeather","veg.tblAreaNames","veg.tblDataForbStudy01meter","veg.tblDataForbStudy03meter","veg.tblDataPrOF04Circles","veg.tblDataPrOF20meter","veg.tblDataWoodlot01meter","veg.tblDataWoodlot03meter","veg.tblDataWoodlot10meter","veg.tblDataWoodlot20meter","veg.tblDataWoodlotVarSize","veg.tblGroupA","veg.tblGroupB","veg.tblGroupC","veg.tblGroupD","veg.tblGroupE","veg.tblGroupF","veg.tblPlantSpecies","veg.tblRegisterSites","veg.tblSampleSites","veg.tblSpeciesForm","veg.tblSurveyMethods","veg.tblTDistribution"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Source database<\/th>\n      <th>Database table name<\/th>\n      <th>Imported R object<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
-<p>The data imported by <code>2_Spatial_Data_Import.R</code> include the following files:</p>
-<div id="htmlwidget-526aaba8fd8b3ad4ecb7" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-526aaba8fd8b3ad4ecb7">{"x":{"filter":"none","vertical":false,"data":[["Data/Geospatial/Wildlife/Wildlife.gdb","Data/Geospatial/Wildlife/Wildlife.gdb","Data/Geospatial/Wildlife/Wildlife.gdb","Data/Geospatial/Wildlife/Wildlife.gdb","Data/Geospatial/Wildlife/Wildlife.gdb","Data/Geospatial/Wildlife/Wildlife.gdb","Data/Geospatial/Wildlife/Wildlife.gdb","Data/Geospatial/General/Park_boundaries.gdb","Data/Geospatial/General/Counties","Data/Geospatial/General/Management/Burns.gdb","Data/Geospatial/Vegetation_Forestry/Forestry.gdb","Data/Geospatial/General/Infrastructure.gdb","Data/Geospatial/General/Infrastructure.gdb","Data/Geospatial/Vegetation_Forestry/Vegetation.gdb","Data/Geospatial/Landcover/MLCCS","Data/Geospatial/Landcover/MLCCS"],["Bird_Point_Counts","Bike_Trail_BBS_Points","Bird_Habitat_Transects_ARCHIVE","Bird_Habitat_Transects_Areas_of_Interest_ARCHIVE","Coverboards_NEW","CoverboardTable_NEW","FrogToad_Stops","Park_Bndry_Public","bdry_counpy2","Burn_Export_2020_for_Sam","InvasiveTreatments","Park_Roads","Trail_Centerline","Veg_Samples","MLCCS_Data_Current.shp","MLCCS_Data_Future.shp"],["spatial.bird.points","spatial.bird.bike.trail.points","spatial.bird.transects","spatial.bird.transects.aois","spatial.herp.coverboards","spatial.herp.coverboards.table","spatial.herp.frog.stops","spatial.boundaries.parks","spatial.boundaries.counties","spatial.mgmt.burns","spatial.mgmt.invasive.treatments","spatial.infrastructure.roads","spatial.infrastructure.trails","spatial.veg.samples","spatial.habitats.current","spatial.habitats.future"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Source geodatabase/directory<\/th>\n      <th>Layer<\/th>\n      <th>Imported R object<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
-</div>
-<div id="clean-data" class="section level2 hasAnchor" number="1.2">
-<h2><span class="header-section-number">1.2</span> Clean data<a href="about.html#clean-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Data are further processed with a data cleaning script (<code>Scripts/3_Data_Cleaning.R</code>) before being fed into subsequent analyses. Cleaning steps include:</p>
-<ul>
-<li><p>Spatial burn management unit data: tidy park names; add missing year planted dates</p></li>
-<li><p>Spatial bird survey transects: tidy park names; create spatial transects for surveys that do not have spatial data</p></li>
-<li><p>MLCCS habitat types: align spelling/styling of categories across current and future layers</p></li>
-</ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="about.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="fu">here</span>(<span class="st">&quot;Scripts&quot;</span>, <span class="st">&quot;3_Data_Cleaning.R&quot;</span>))</span></code></pre></div>
-<p><strong>Note</strong>: many of the fixes made by cleaning script should eventually be applied to the original data files, but for now are done programatically for repeatability.</p>
-
-</div>
+<div id="page-not-found" class="section level1">
+<h1>Page not found</h1>
+<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
+<p>You may want to try searching to find the page's new location, or use
+the table of contents to find the page you are looking for.</p>
 </div>
             </section>
 
@@ -260,7 +227,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 
-<a href="park-species-lists.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
